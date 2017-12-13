@@ -67,6 +67,7 @@ npm start
 
 ## Notes
 Some Consideration
+
   a.	 Node will never be out of memory, As we are reading line by line and no of lines can be reduced.
   
   b.	This app, downloads all the file into data folder and processes from there. But it keeps data.json in memory for processing and let this go once we have all the urls from it. You can check the progress of download in data folder as well.
