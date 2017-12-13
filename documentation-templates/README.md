@@ -3,6 +3,7 @@
 Deployment Guide
 
 ### Description
+This tool syncs  data from The Department of Veterans Affairs' (VA) to local db
 
 ## Prerequisites
 1. Node 8.x
