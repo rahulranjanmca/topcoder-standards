@@ -68,9 +68,16 @@ npm start
 ## Notes
 Some Consideration
   a.	 Node will never be out of memory, As we are reading line by line and no of lines can be reduced.
+  
   b.	This app, downloads all the file into data folder and processes from there. But it keeps data.json in memory for processing and let this go once we have all the urls from it. You can check the progress of download in data folder as well.
+  
   c.	Once the database rows will be greater that 1 or 1.5 million, database might be little slow
+  
   d.	Probably Primary key and foreign key can be removed to make the database faster. But as a complete schema details, I am putting all the foreign key and primary key. Am testing with this only.
+  
   e.	You cannot remove unique key constraint. This is the base for primary key. And my queries needs it be unique. 
+  
   f.	One and only one query will be fired for one operation.  So lets take, we have 55000 records and max rows to process are 10000,       then a total of 6 queries will be fired for save. And same number of queries will be fired for getting and updating war, branch,      rank etc.
+  
   g.	This is designed in such a way, we keep unique key, and foreign key. In future if the think to change the primary key base, just update the config.json and empty the table and run the program. If you don’t want to empty the tables, update the table unique key with the way I am generating in program like underscore separated and then run the program.
+  
