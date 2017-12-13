@@ -34,16 +34,27 @@ npm start
 3.	Got to <BASE_FOLDER>/Sumission/app/config.json
 
   a.	MAX_NO_OF_CSV_LINE_ONE_TIME- max no of lines to process at a time- Right now its 50000, You can increase or decrease depending upon hardware.
+  
   b.	FILE_STARTING_INDEX- If you are running second time, and only want to update from  last the states index from this number. Index is the sequence in which url is found in data.json. Default 0.
+  
   c.	FILE_STARTING_INDEX- If you are running second time, and only want to update last the states index from this number. Index is the sequence in which url is found in data.json. Default -1. Means process all.
+  
   d.	DATABASE_USER- PostgreSQL  Database User
+  
   e.	DATABASE_NAME-  PostgreSQL  Database Name
+  
   f.	DATABASE_PASSWORD-   PostgreSQL  Database Password
+  
   g.	DATABASE_HOST-  PostgreSQL  Database Host
+  
   h.	DATABASE_PORT- PostgreSQL  Database Port
+  
   i.	TEST_MODE- true/false, If test mode, and if data is already in /data/ folder, it will not download and processes the earlier file. But with production mode, it will always download. Default false. Have included data.json in the app folder, as in test mode it doesn’t download data.json but it reads from local.
+  
   j.	VETERAN_UNIQUE_KEY_COLUMN_INDEXES-  Comma separated indexes which should be considered as unique key consideration for veteran details. 
+  
   k.	CEMENTRY_UNIQUE_KEY_COLUMN_INDEXES- Comma separated indexes which should be considered as unique key consideration for cemetery. 
+  
 
 4.	Open Console or bash command from app folder
 5.	Npm install
