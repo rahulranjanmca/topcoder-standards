@@ -1,30 +1,25 @@
 
-# VA Online Memorial - Data import & sync 
+# IOT Event Hub Data Imort 
 Deployment Guide
 
 ### Description
-This tool syncs  data from The Department of Veterans Affairs' (VA) to local db
+This tool imports the data from iot and event hubs
 
 ## Prerequisites
-1. Node 8.x
-  1. NPM
-1. PostgreSQL 10.1
+1. Java 8
 
 
 ## Local Deployment
-Initialize you database with ddl.sql
 
 ```bash
-npm install
-npm start
+java IotEventHubTool {configurations}
 
 ```
 
 ## Production Build and Installation
-Initialize you database with ddl.sql
+
 ```bash
-npm install
-npm start
+java IotEventHubTool {configurations}
 ```
 
 ### Manual Deployment Notes
